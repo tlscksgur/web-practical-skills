@@ -1,0 +1,233 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none; color: inherit;}
+ul,li{list-style: none;}
+/* -----------------초기화------------------ */
+
+
+.container{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 200px;
+    height: 800px;
+    background-color: antiquewhite;
+}
+section{
+    width: 100%;
+}
+
+
+.header-logo img {
+    margin-top: 20px;
+}
+
+
+
+/* -----------header----------- */
+
+.drop {
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.drop > ul {
+    position: relative;
+}
+
+.drop > ul > li > ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 1;
+    width: 0;
+    background-color: aqua;
+    transition: 1s;
+}
+
+.drop ul > li > ul > li {
+    overflow: hidden;
+    width: 0;
+    transition: 1s;
+}
+
+.drop:hover ul > li > ul > li {
+    width: 150px;
+}
+
+.drop ul > li > ul {
+    overflow: hidden;
+    width: 0;
+}
+
+.drop:hover ul > li > ul {
+    width: 100vw;
+}
+
+
+.drop > ul > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.drop > ul > li > ul > li > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(77, 201, 250);
+}
+
+/* ---------dropdown-------- */
+
+
+.slide > ul{
+    position: relative;
+}
+
+.slide-in {
+    transition: 2s;
+    position: absolute;
+}
+
+
+/* ---------slide--------- */
+
+.icon ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+}
+
+/* ---------icon----------- */
+
+.bott {
+    display: flex;
+    justify-content: space-around;
+    height: 250px;
+}
+
+.notice {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.notice > ul > li {
+    padding: 6px;
+    border-bottom: 1px solid;
+}
+
+.notice h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(252, 252, 51, 0.747);
+    border-radius: 10px;
+}
+
+/* ---------gallery--------- */
+
+.gallery {
+    
+} 
+
+.gallery ul {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    padding: 5px;
+}
+
+.gallery ul > li {
+    overflow: hidden;
+}
+
+.gallery h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.gallery  ul  li a {
+    display: block;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery img {
+    transition: .3s;
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+
+.gallery img:hover {
+    scale: 1.1;
+    border-radius: 5px;
+}
+
+/* ---------footer--------- */
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: bisque;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    line-height: 50px;
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+
+.ft {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    /* background-color: aqua; */
+}
+
+footer a {
+}
+
+
+footer p {
+}
+
+select {
+    width: 130px;
+    height: 40px;
+    border: 0;
+    border-radius: 10px;
+}
